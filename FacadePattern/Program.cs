@@ -6,7 +6,11 @@ namespace FacadePattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var restauranteFacade = new RestaurenteFacade();
+            restauranteFacade.BuscarPizzaNormal();
+            restauranteFacade.BuscarPizzaVegana();
+            restauranteFacade.BuscarPaoDeAlho();
+            restauranteFacade.BuscarPaoDeAlhoComQueijo();
         }
     }
 }
